@@ -4,11 +4,10 @@ import { FormsModule } from '@angular/forms';
 
 import { IonicModule } from '@ionic/angular';
 
-import { ButtonPageRoutingModule } from './button-routing.module';
+import { CardPageRoutingModule } from './card-routing.module';
 
-import { ButtonPage } from './button.page';
-import { CardPageRoutingModule } from '../card/card-routing.module';
-import { CardPage } from '../card/card.page';
+import { CardPage } from './card.page';
+import { ComponentsModule } from '../../components/components.module';
 
 @NgModule({
   imports: [
@@ -16,8 +15,8 @@ import { CardPage } from '../card/card.page';
     FormsModule,
     IonicModule,
     CardPageRoutingModule,
-    ButtonPageRoutingModule
+    ComponentsModule
   ],
   declarations: [CardPage]
 })
-export class ButtonPageModule {}
+export class CardPageModule {}
